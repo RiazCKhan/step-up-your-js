@@ -1,5 +1,6 @@
-// WHAT WILL THE FOLLOWING CODE PRINT?
+// ----- VARIABLE SCOPE -----
 
+// What will the following code print?
 // ----- Exercise 1 -----
 var a = 'abc';
 var b = 'def';
@@ -54,3 +55,5 @@ outerFn();
 
 console.log(x); // x = 5
 console.log(y); // y = 'xyz'
+
+
