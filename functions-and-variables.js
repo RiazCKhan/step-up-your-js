@@ -56,4 +56,3 @@ outerFn();
 console.log(x); // x = 5
 console.log(y); // y = 'xyz'
 
-
