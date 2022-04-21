@@ -5,6 +5,4 @@
 
 function func(param) {
   
-  return innerFN() 
-
 }
