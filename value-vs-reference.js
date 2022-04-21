@@ -18,5 +18,5 @@ const personObj1 = {
 
 const personObj2 = changeAgeAndReference(personObj1);
 
-console.log(personObj1); // -> ?
-console.log(personObj2); // -> ?
+console.log(personObj1); // -> Alex
+console.log(personObj2); // -> John
