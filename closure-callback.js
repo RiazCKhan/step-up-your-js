@@ -4,5 +4,7 @@
 // originally passed in to func when it was called.
 
 function func(param) {
-  
+  return function(){
+    
+  }
 }
