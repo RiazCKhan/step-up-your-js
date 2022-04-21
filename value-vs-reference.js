@@ -1,3 +1,6 @@
+// Given the following code
+// what will print to console?
+
 function changeAgeAndReference(person) {
   person.age = 25;
   person = {
