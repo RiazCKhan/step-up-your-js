@@ -5,6 +5,6 @@
 
 function func(param) {
   return function(){
-    
+    return param
   }
 }
