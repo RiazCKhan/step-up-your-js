@@ -18,3 +18,7 @@ const obj = {
 };
 
 console.log(obj.val)
+
+// Note: Getter Methods still require a 'return'
+// 'this' can be used to reference variables within the same OBJ
+// Getter Methods do not require a parenthese() when called
