@@ -13,6 +13,8 @@ console.log(obj.val); -> 16
 const obj = {
   _val: 1,
   get val() {
-      // Your code here
+      return this._val = this._val * 2
   }
 };
+
+console.log(obj.val)
