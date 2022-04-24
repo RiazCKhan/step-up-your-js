@@ -22,6 +22,7 @@ logThisAndArguments.call(obj, 'First arg', 'Second arg');
 // -> Second arg
 
 // USING APPLY
+// Works exactly like 'call'  EXCEPT arguements are passed in an Array
 logThisAndArguments.apply(obj, ['First arg', 'Second arg']);
 // -> { val: 'Hello!' }
 // -> First arg
