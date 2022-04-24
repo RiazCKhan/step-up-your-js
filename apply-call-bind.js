@@ -29,6 +29,11 @@ logThisAndArguments.apply(obj, ['First arg', 'Second arg']);
 // -> Second arg
 
 // USING BIND
+/* 
+bind returns a new function. 
+This new function has the this value and the parameters already set and bound. 
+When it’s invoked, it’ll be invoked with those items already in place.
+*/
 const fnBound = logThisAndArguments.bind(obj, 'First arg', 'Second arg');
 fnBound();
 // -> { val: 'Hello!' }
