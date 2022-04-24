@@ -13,8 +13,10 @@ logThisAndArguments('First arg', 'Second arg');
 // -> Second arg
 
 // USING CALL
+// FN call is no longer like the 'normal call above'
+// the 'call' sets 'this' to the first argurment, i.e., obj
 logThisAndArguments.call(obj, 'First arg', 'Second arg');
-// -> { val: 'Hello!' }
+// -> { val: 'Hello!' } ( = this)
 // -> First arg
 // -> Second arg
 
