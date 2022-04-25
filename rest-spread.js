@@ -41,7 +41,7 @@ const sum = Object.keys(obj)
   .filter(item => item.cost > 0)
   .map(item => item.cost * item.amount)
   .reduce((sum, next) => sum + next);
-  
+
 
 // ------ ORIGINAL -----
 // const sum = Object.keys(obj)
@@ -64,9 +64,26 @@ const sum = Object.keys(obj)
 // but a different reference. In other words,
 // create an array shallow-copy function.
 
-const shallowCopy = (arr) => [ ...arr ]
+const shallowCopy = (arr) => [...arr]
 const org = [1, 2, 3, 4]
 const copy = shallowCopy([1, 2, 3, 4])
 console.log('this is false -> ', org === copy)
 // this is because the new arr points to a different point in memory, i.e., different reference
 
+
+// ----- Exercise 3 -----
+
+// Write one line of code using the reduce
+// function that will turn this array of 0s
+// into an array of 0s and 1s.
+// NO USING THE CHARACTERS { OR }
+
+function fn() {
+  const arr1 = [0, 0, 0];
+  // We want to return [0, 1, 0, 1, 0, 1]
+
+  arr1.reduce((accum, next) => [...accum, next, 1], []);
+
+}
+
+fn()
