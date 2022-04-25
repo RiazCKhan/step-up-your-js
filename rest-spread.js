@@ -5,20 +5,20 @@
 
 const obj = {
   groceries: {
-      cost: 33.22,
-      amount: 1
+    cost: 33.22,
+    amount: 1
   },
   rent: {
-      cost: 899.00,
-      amount: 1,
+    cost: 899.00,
+    amount: 1,
   },
   paycheck: {
-      cost: -2000,
-      amount: 2
+    cost: -2000,
+    amount: 2
   },
   restaurantBills: {
-      cost: 20,
-      amount: 4
+    cost: 20,
+    amount: 4
   }
 };
 
@@ -31,10 +31,7 @@ const obj = {
 // Multiply the cost of each remaining item times
 // the amount purchased and add it all up.
 const sum = Object.keys(obj)
-  .map( key => obj[key])
-  .filter ( item => item.cost > 0)
-    .map(function(item) {
-    return item.cost * item.amount;
-  }).reduce(function(sum, next) {
-    return sum + next;
-  });
+  .map(key => obj[key])
+  .filter(item => item.cost > 0)
+  .map(item => item.cost * item.amount)
+  .reduce((sum, next) => sum + next);
