@@ -30,8 +30,24 @@ const obj = {
 // Filter out all items with a negative cost.
 // Multiply the cost of each remaining item times
 // the amount purchased and add it all up.
+
+
+// ----- REFACTORED -----
 const sum = Object.keys(obj)
   .map(key => obj[key])
   .filter(item => item.cost > 0)
   .map(item => item.cost * item.amount)
   .reduce((sum, next) => sum + next);
+
+
+// ------ ORIGINAL -----
+// const sum = Object.keys(obj)
+//     .map(function(key) {
+//       return obj[key]; 
+//     }).filter(function(item) {
+//       return item.cost > 0;
+//     }).map(function(item) {
+//       return item.cost * item.amount;
+//     }).reduce(function(sum, next) {
+//       return sum + next;
+//     }); 
