@@ -31,11 +31,9 @@ const obj = {
 // Multiply the cost of each remaining item times
 // the amount purchased and add it all up.
 const sum = Object.keys(obj)
-  .map(function(key) {
-    return obj[key]; 
-  }).filter(function(item) {
-    return item.cost > 0;
-  }).map(function(item) {
+  .map( key => obj[key])
+  .filter ( item => item.cost > 0)
+    .map(function(item) {
     return item.cost * item.amount;
   }).reduce(function(sum, next) {
     return sum + next;
