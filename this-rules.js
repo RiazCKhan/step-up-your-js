@@ -62,3 +62,7 @@ function fn() {
 
 // If called in browser:
 fn(); // -> Window {stop: ƒ, open: ƒ, alert: ƒ, ...}
+
+// ----- RULE 5 -----
+// If multiple rules apply then the rule that is higher wins 
+// and will set the value of this
