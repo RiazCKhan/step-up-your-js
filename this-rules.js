@@ -55,3 +55,10 @@ If a function is invoked as a free function invocation,
 meaning it was invoked without any of the conditions present above, 
 this is the global object. In a browser, it’s window.
 */
+
+function fn() {
+  console.log('rule 4 example', this);
+}
+
+// If called in browser:
+fn(); // -> Window {stop: ƒ, open: ƒ, alert: ƒ, ...}
