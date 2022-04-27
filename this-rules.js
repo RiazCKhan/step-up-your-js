@@ -29,3 +29,12 @@ var boundFn = fn.bind(obj);
 boundFn(); // -> { value: 5 }
 fn.call(obj); // -> { value: 5 }
 fn.apply(obj); // -> { value: 5 }
+
+// ----- RULE 3 ----- 
+/* If a function is called as a method — that is, 
+if dot notation is used to invoke the function — 
+this is the object that the function is a property of. 
+In other words, when a dot is to the left of a function invocation, 
+this is the object to the left of the dot. 
+(ƒ symbolizes function in the code blocks)
+*/
