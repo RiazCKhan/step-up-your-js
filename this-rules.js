@@ -31,7 +31,8 @@ fn.call(obj); // -> { value: 5 }
 fn.apply(obj); // -> { value: 5 }
 
 // ----- RULE 3 ----- 
-/* If a function is called as a method — that is, 
+/* 
+If a function is called as a method — that is, 
 if dot notation is used to invoke the function — 
 this is the object that the function is a property of. 
 In other words, when a dot is to the left of a function invocation, 
@@ -47,3 +48,10 @@ const obj2 = {
 };
 
 obj2.printThis(); // -> { value: 5, printThis: ƒ }
+
+// ----- RULE 4 ----- 
+/* 
+If a function is invoked as a free function invocation, 
+meaning it was invoked without any of the conditions present above, 
+this is the global object. In a browser, it’s window.
+*/
