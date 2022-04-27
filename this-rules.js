@@ -3,9 +3,9 @@
 // the function is a brand new object created by the JavaScript engine.
 
 function ConstructorExample() {
-  console.log(this);
+  console.log('rule 1 example', this);
   this.value = 10;
-  console.log(this);
+  console.log('rule 1 example', this);
 }
 
 new ConstructorExample();
@@ -17,7 +17,7 @@ new ConstructorExample();
 // inside the function is the object that is passed in as the argument.
 
 function fn() {
-  console.log(this);
+  console.log('rule 2 example', this);
 }
 
 var obj = {
@@ -38,3 +38,12 @@ In other words, when a dot is to the left of a function invocation,
 this is the object to the left of the dot. 
 (ƒ symbolizes function in the code blocks)
 */
+
+const obj2 = {
+  value: 5,
+  printThis: function() {
+    console.log('rule 3 example', this);
+  }
+};
+
+obj2.printThis(); // -> { value: 5, printThis: ƒ }
