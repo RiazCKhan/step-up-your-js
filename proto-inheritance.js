@@ -11,3 +11,6 @@
 // 2 - What will print? True or False?
 const obj = {};
 console.log(obj.__proto__ === Object.prototype);
+
+// Answer = True
+// Null = Null
