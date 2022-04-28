@@ -25,10 +25,16 @@
 // console.log(Object.prototype) // --> === null 
 
 // ----- 4 - What will print? True or False?
-function Fn() {}
-const obj = new Fn();
-console.log(obj.__proto__ === Fn.prototype);
+// function Fn() {}
+// const obj = new Fn();
+// console.log(obj.__proto__ === Fn.prototype);
 
 // Answer = True
 
 // ----- 5 - What will print? True or False?
+function Fn() {}
+const obj = new Fn();
+console.log(obj.__proto__.__proto__ === Object.prototype);
+
+// Answer = true
+// Neither of these values exist
