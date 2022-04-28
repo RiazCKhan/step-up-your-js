@@ -28,3 +28,5 @@
 function Fn() {}
 const obj = new Fn();
 console.log(obj.__proto__ === Fn.prototype);
+
+// Answer = True
