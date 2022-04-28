@@ -19,3 +19,7 @@
 function Fn() {}
 const obj = new Fn();
 console.log(obj.__proto__ === Object.prototype);
+
+// Answer = False
+// console.log(obj.__proto__) // --> !== null
+// console.log(Object.prototype) // --> === null 
