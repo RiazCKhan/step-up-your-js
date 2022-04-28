@@ -9,8 +9,13 @@
 // console.log(Object.__proto__) --> prints the empty obj
 
 // 2 - What will print? True or False?
-const obj = {};
-console.log(obj.__proto__ === Object.prototype);
+// const obj = {};
+// console.log(obj.__proto__ === Object.prototype);
 
 // Answer = True
 // Null = Null
+
+// 3 - What will print? True or False?
+function Fn() {}
+const obj = new Fn();
+console.log(obj.__proto__ === Object.prototype);
