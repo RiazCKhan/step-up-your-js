@@ -49,8 +49,16 @@
 // console.log(obj.__proto__.__proto__) // --> second level === new Functions
 
 // ----- 7 - What will print? True or False?
-function Fn() {}
-const obj = Object.create(Fn.prototype);
-console.log(obj.__proto__ === Fn.prototype);
+// function Fn() {}
+// const obj = Object.create(Fn.prototype);
+// console.log(obj.__proto__ === Fn.prototype);
 
 // Answer = true
+
+// ----- 8 - What will print? True or False?
+function Fn() {}
+const obj = Object.create(Fn);
+console.log(obj.__proto__ === Fn.prototype);
+
+// console.log(obj) // --> Fn {}
+// console.log(Fn.prototype) // --> {}
