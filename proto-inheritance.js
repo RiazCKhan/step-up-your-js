@@ -42,4 +42,7 @@
 // ----- 6 - What will print?
 function Fn() {}
 const obj = new Fn();
-console.log(obj.__proto__.__proto__.__proto__);
+// console.log(obj.__proto__.__proto__.__proto__);
+
+// console.log(obj.__proto__) // --> first level above object literal === {}
+// console.log(obj.__proto__.__proto__) // --> second level === new Functions
