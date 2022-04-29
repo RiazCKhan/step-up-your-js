@@ -78,3 +78,5 @@ function Fn() {}
 const obj1 = new Fn();
 const obj2 = Object.create(obj1);
 console.log(obj2.__proto__.__proto__.__proto__ === Object.prototype);
+
+console.log(obj2.__proto__.__proto__.__proto__) // --> Fn {}
