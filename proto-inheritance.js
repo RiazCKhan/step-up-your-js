@@ -40,10 +40,15 @@
 // Neither of these values exist
 
 // ----- 6 - What will print?
-function Fn() {}
-const obj = new Fn();
-console.log(obj.__proto__.__proto__.__proto__);
+// function Fn() {}
+// const obj = new Fn();
+// console.log(obj.__proto__.__proto__.__proto__);
 
 // Answer = null
 // console.log(obj.__proto__) // --> first level above object literal === {}
 // console.log(obj.__proto__.__proto__) // --> second level === new Functions
+
+// ----- 7 - What will print? True or False?
+function Fn() {}
+const obj = Object.create(Fn.prototype);
+console.log(obj.__proto__ === Fn.prototype);
