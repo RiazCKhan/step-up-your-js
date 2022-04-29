@@ -56,9 +56,16 @@
 // Answer = true
 
 // ----- 8 - What will print? True or False?
-function Fn() {}
-const obj = Object.create(Fn);
-console.log(obj.__proto__ === Fn.prototype);
+// function Fn() {}
+// const obj = Object.create(Fn);
+// console.log(obj.__proto__ === Fn.prototype);
 
+// Answer = false
 // console.log(obj) // --> Fn {}
 // console.log(Fn.prototype) // --> {}
+
+// ----- 9 - What will print? True or False?
+function Fn() {}
+const obj1 = new Fn();
+const obj2 = Object.create(obj1);
+// console.log(obj2.__proto__.__proto__ === Fn.prototype);
