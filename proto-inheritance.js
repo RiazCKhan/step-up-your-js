@@ -52,3 +52,5 @@
 function Fn() {}
 const obj = Object.create(Fn.prototype);
 console.log(obj.__proto__ === Fn.prototype);
+
+// Answer = true
