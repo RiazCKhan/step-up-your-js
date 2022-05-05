@@ -51,7 +51,7 @@ function isEven(numbers) {
   })
 }
 
-console.log(isEven(data2))
+// console.log(isEven(data2))
 
 const ashFamily = [
   {
@@ -69,8 +69,12 @@ const ashFamily = [
   }
 ]
 
-function getOlderFamily(family){
-
-
-
+function getOlderFamily(family) {
+  return family.filter((person, index) => {
+    if (person.age > 40) {
+      return person.familyMember
+    }
+  })
 }
+
+getOlderFamily(ashFamily)
