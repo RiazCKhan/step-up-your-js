@@ -70,11 +70,8 @@ const ashFamily = [
 ]
 
 function getOlderFamily(family) {
-  return family.filter((person, index) => {
-    if (person.age > 40) {
-      return person.familyMember
-    }
-  })
+  return family.filter(person => person.age > 40)
+  .map(oldPerson => oldPerson.familyMember)
 }
 
-getOlderFamily(ashFamily)
+console.log(getOlderFamily(ashFamily))
