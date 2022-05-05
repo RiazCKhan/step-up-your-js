@@ -52,3 +52,25 @@ function isEven(numbers) {
 }
 
 console.log(isEven(data2))
+
+const ashFamily = [
+  {
+    familyMember: 'Uncle',
+    age: 52,
+    location: 'San Diego, CA'
+  }, {
+    familyMember: 'Grandpa',
+    age: 84,
+    location: 'San Francisco, CA'
+  }, {
+    familyMember: 'Sister',
+    age: 19,
+    location: 'New York, NY'
+  }
+]
+
+function getOlderFamily(family){
+
+
+
+}
