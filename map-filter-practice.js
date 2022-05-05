@@ -14,15 +14,22 @@ const toUpperCase = data.map((item, index, arr) => arr[index][0].toUpperCase() +
 
 const data2 = [1, 2, 3, 4, 5]
 
-function evenOdd(item, index, arr) {
+// function evenOdd(item, index, arr) {
+//   if (item % 2 === 0) {
+//    return arr[index] = 'even'
+//   }
+//   else {
+//     return arr[index] = 'odd'
+//   }
+// }
 
+const evenOdd = data2.map((item, index, arr) => {
   if (item % 2 === 0) {
-   return arr[index] = 'even'
+    return arr[index] = 'even'
   }
   else {
     return arr[index] = 'odd'
   }
-}
+})
 
-console.log(data2.map(evenOdd))
-
+console.log(evenOdd)
