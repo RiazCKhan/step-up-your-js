@@ -16,4 +16,8 @@ function forEachAdd(numbers) {
   return total;
 }
 
-console.log(forEachAdd(array1))
+const array2 = ['abc', 'def']
+
+function toObject(strings) {
+    
+}
