@@ -9,9 +9,11 @@ function reduceAdd(numbers) {
 }
 
 function forEachAdd(numbers) {
-  return numbers.forEach((num, index, arr) => {
-    return num + num[i]
+  let total = 0
+  numbers.forEach((num) => {
+    total += num
   })
+  return total;
 }
 
 console.log(forEachAdd(array1))
