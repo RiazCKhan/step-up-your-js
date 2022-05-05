@@ -41,5 +41,14 @@ function evenOdd(numbers) {
   })
 }
 
-console.log(evenOdd(data2))
+// console.log(evenOdd(data2))
 
+function isEven(numbers) {
+  return numbers.filter((num) => {
+    if (num % 2 == 0) {
+      return 'even'
+    }
+  })
+}
+
+console.log(isEven(data2))
