@@ -27,3 +27,10 @@ function forEachToObject(arr) {
 }
 
 console.log(forEachToObject(array2))
+
+const array3 = ['abc', 17, 'def']
+const array4 = ['def', 'abc', null, 17, 24]
+
+function isSubset(arr1, arr2) {
+    
+}
