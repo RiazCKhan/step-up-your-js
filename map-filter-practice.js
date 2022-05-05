@@ -23,13 +23,22 @@ const data2 = [1, 2, 3, 4, 5]
 //   }
 // }
 
-const evenOdd = data2.map((item, index, arr) => {
-  if (item % 2 === 0) {
-    return arr[index] = 'even'
-  }
-  else {
-    return arr[index] = 'odd'
-  }
-})
+function evenOdd(numbers) {
+  return numbers.map((item, index, arr) => {
+      if (item % 2 === 0) {
+        return arr[index] = 'even'
+      }
+        return arr[index] = 'odd'
+    })
+}
+
+// const evenOdd = data2.map((item, index, arr) => {
+//   if (item % 2 === 0) {
+//     return arr[index] = 'even'
+//   }
+//   else {
+//     return arr[index] = 'odd'
+//   }
+// })
 
 console.log(evenOdd)
