@@ -18,17 +18,12 @@ function forEachAdd(numbers) {
 
 const array2 = ['abc', 'def']
 
-// function reduceToObject(strings) {
-//   let obj = {}
-//   strings.reduce((str) => {
-//     obj.str = 'true'
-//   })
-//   console.log(obj)
-// }
-
-// console.log(toObject(array2))
-
-function forEachToObject(array) {
-
+function forEachToObject(arr) {
+  let object = {}
+  arr.forEach((str) => {
+    object[str] = 'true'
+  })
+  return object
 }
 
+console.log(forEachToObject(array2))
