@@ -6,5 +6,8 @@ const object = {
 
 // Finish this:
 const sum = function(obj){
-
+  let values = Object.keys(obj)
+  .map((key) => console.log(obj[key]))
 }
+
+sum(object)
