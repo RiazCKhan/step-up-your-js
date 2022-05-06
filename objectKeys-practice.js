@@ -7,7 +7,11 @@ const object = {
 // Finish this:
 const sum = function(obj){
   let values = Object.keys(obj)
-  .map((key) => console.log(obj[key]))
+  .map((key) => obj[key] * 3)
+  // .reduce((value, nextItem) => {
+  //   return value 
+  // }, 0)
+
 }
 
 sum(object)
