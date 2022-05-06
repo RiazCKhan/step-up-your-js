@@ -26,11 +26,19 @@ function forEachToObject(arr) {
   return object
 }
 
-console.log(forEachToObject(array2))
+// console.log(forEachToObject(array2))
 
 const array3 = ['abc', 17, 'def']
 const array4 = ['def', 'abc', null, 17, 24]
 
-function isSubset(arr1, arr2) {
+function isSubset (arr1, arr2) {
+  return arr1.reduce(function(bool, nextItem) {
+        if(bool === false) {
+            return false;
+        }
     
+        return arr2.includes(nextItem);
+  }, true);
 }
+
+console.log(isSubset(array3, array4))
