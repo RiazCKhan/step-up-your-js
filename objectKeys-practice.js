@@ -5,13 +5,13 @@ const object = {
 };
 
 // Finish this:
-const sum = function(obj){
-  let values = Object.keys(obj)
-  .map((key) => obj[key] * 3)
-  // .reduce((value, nextItem) => {
-  //   return value 
-  // }, 0)
-
+const sum = function (obj) {
+  let value = Object.keys(obj)
+    .map((key) => obj[key] * 3)
+    .reduce((accum, nextValue) => {
+      return accum + nextValue
+    }, 0)
+  return value
 }
 
-sum(object)
+console.log(sum(object))
